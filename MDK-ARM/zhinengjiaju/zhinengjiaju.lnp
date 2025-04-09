@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"zhinengjiaju\startup_stm32f103xb.o"
+"zhinengjiaju\main.o"
+"zhinengjiaju\gpio.o"
+"zhinengjiaju\adc.o"
+"zhinengjiaju\stm32f1xx_it.o"
+"zhinengjiaju\stm32f1xx_hal_msp.o"
+"zhinengjiaju\stm32f1xx_hal_gpio_ex.o"
+"zhinengjiaju\stm32f1xx_hal_adc.o"
+"zhinengjiaju\stm32f1xx_hal_adc_ex.o"
+"zhinengjiaju\stm32f1xx_hal.o"
+"zhinengjiaju\stm32f1xx_hal_rcc.o"
+"zhinengjiaju\stm32f1xx_hal_rcc_ex.o"
+"zhinengjiaju\stm32f1xx_hal_gpio.o"
+"zhinengjiaju\stm32f1xx_hal_dma.o"
+"zhinengjiaju\stm32f1xx_hal_cortex.o"
+"zhinengjiaju\stm32f1xx_hal_pwr.o"
+"zhinengjiaju\stm32f1xx_hal_flash.o"
+"zhinengjiaju\stm32f1xx_hal_flash_ex.o"
+"zhinengjiaju\stm32f1xx_hal_exti.o"
+"zhinengjiaju\system_stm32f1xx.o"
+"zhinengjiaju\oled.o"
+"zhinengjiaju\dht11.o"
+--strict --scatter "zhinengjiaju\zhinengjiaju.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "zhinengjiaju.map" -o zhinengjiaju\zhinengjiaju.axf
